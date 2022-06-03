@@ -2,7 +2,6 @@
 const Todo = require('../models/taskTodo');
 module.exports.newtask=function(req,res){
 //    creates the object in Todo db with the values from the request
-console.log(req.body.title);
     Todo.create({
         title: req.body.title,
         taskdescription: req.body.taskdescription,

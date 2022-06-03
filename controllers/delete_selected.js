@@ -11,8 +11,7 @@ module.exports.removedselect=function(req,res){
                 return; 
             }
         });
-    }
-    else {    // if multiple task is to be deleted
+    } else {    // if multiple task is to be deleted
         for (let id of ids) {
             // finding the object fro each id from ids list...form the request and deleting it
             Todo.findByIdAndDelete(id, function (err) {
