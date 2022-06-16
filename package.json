@@ -4,7 +4,7 @@
   "description": "Major Project TODO WebAPP",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js",
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ritik Singla",
@@ -15,4 +15,4 @@
     "express-ejs-layouts": "^2.5.0",
     "mongoose": "^5.12.11"
   }
-}
+} 
