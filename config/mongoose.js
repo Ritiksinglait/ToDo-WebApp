@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // connect to mongodb
-mongoose.connect('mongodb://localhost/TODOWebApp_development');
+mongoose.connect(process.env.db_url);
 // connection made
 const db = mongoose.connection;
 // on succesfull connection callback function if there is the error

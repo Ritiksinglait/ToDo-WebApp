@@ -10,7 +10,7 @@ const express = require('express');
 // run express
 const app = express(); 
 // setting the port
-const port = 8000;
+const port =  process.env.PORT||8000;
 // adding middleware to convert the request data to json object
 app.use(express.urlencoded());
 //to access static files
